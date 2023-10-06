@@ -1,0 +1,39 @@
+/* Custom color variables */
+:root {
+    --primary-color: #faf3f3;
+    --secondary-color: #cac9c8;
+    --accent-color: #747472;
+    --background-color: #bcbcb4;
+    --text-color: #1c1c1b;
+}
+
+/* Navigation bar styles */
+.navbar {
+    background-color: var(--primary-color);
+}
+
+.navbar-dark .navbar-toggler-icon {
+    background-color: var(--text-color);
+}
+
+.navbar-dark .navbar-toggler:focus, .navbar-dark .navbar-toggler:active {
+    outline: none;
+}
+
+.nav-link {
+    color: var(--text-color);
+}
+
+.nav-link:hover {
+    color: var(--accent-color);
+}
+
+/* Your custom logo size */
+.navbar-brand img {
+    max-width: 90px; /* Adjust the logo size as needed */
+    height: auto;
+    mix-blend-mode: multiply;
+    border-radius: 10px;
+}
+
+
