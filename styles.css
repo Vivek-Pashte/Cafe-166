@@ -36,4 +36,10 @@
     border-radius: 10px;
 }
 
+.special-offers {
+    max-height: 75vh;
+}
 
+.text-Gold {
+    color: #ffd200;
+}
