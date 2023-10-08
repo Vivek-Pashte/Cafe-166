@@ -1,45 +1,77 @@
 /* Custom color variables */
 :root {
-    --primary-color: #faf3f3;
-    --secondary-color: #cac9c8;
-    --accent-color: #747472;
-    --background-color: #bcbcb4;
-    --text-color: #1c1c1b;
+  --primary-color: #faf3f3;
+  --secondary-color: #cac9c8;
+  --accent-color: #747472;
+  --background-color: #bcbcb4;
+  --text-color: #1c1c1b;
 }
 
 /* Navigation bar styles */
 .navbar {
-    background-color: var(--primary-color);
+  background-color: var(--primary-color);
 }
 
-.navbar-dark .navbar-toggler-icon {
-    background-color: var(--text-color);
+.navbar-toggler-icon {
+  background-color: var(--text-color);
 }
 
-.navbar-dark .navbar-toggler:focus, .navbar-dark .navbar-toggler:active {
-    outline: none;
+.navbar-toggler:focus,
+.navbar-toggler:active {
+  outline: none;
 }
 
 .nav-link {
-    color: var(--text-color);
+  color: var(--text-color);
 }
 
 .nav-link:hover {
-    color: var(--accent-color);
+  color: var(--accent-color);
 }
 
-/* Your custom logo size */
 .navbar-brand img {
-    max-width: 90px; /* Adjust the logo size as needed */
-    height: auto;
-    mix-blend-mode: multiply;
-    border-radius: 10px;
+  max-width: 90px;
+  height: auto;
+  mix-blend-mode: multiply;
+  border-radius: 10px;
 }
 
 .special-offers {
-    max-height: 75vh;
+  max-height: 75vh;
 }
 
-.text-Gold {
-    color: #ffd200;
+/* CSS for the Order Now section with a background image */
+.order-now {
+    background-image: url('image/ring.png');
+    /* background-size: cover; */
+    background-position: right;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+    font-family: 'Roboto', sans-serif;
 }
+
+/* Custom CSS for the button */
+.custom-btn {
+    background-color: #faf3f3;
+    color: #333; /* Text color */
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Style the button on hover */
+.custom-btn:hover {
+    background-color: #eee;
+}
+
+/* CSS for the Order Now section with a background image */
+.customer-reviews {
+    background-image: url('image/pecock.png');
+    background-position: left;
+    background-repeat: no-repeat;
+    padding: 60px 0;
+    font-family: 'Roboto', sans-serif;
+}
+
