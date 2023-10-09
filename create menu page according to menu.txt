@@ -1,0 +1,73 @@
+create menu page according to menu
+---------------------------------
+           MENU
+---------------------------------
+
+--- SANDWICHES ---
+1. Cheese, Chutney & Cucumber - 80rs
+2. Chicken Grilled - 140rs
+3. Chicken Mayo - 140rs
+4. Chicken Tikka - 150rs
+5. Smoked Chicken - 150rs
+6. Turkey - 150rs
+
+--- DESSERTS ---
+9. Chocolate Éclairs - 80rs
+10. Red Velvet/Chocolate Cup Cake - 85rs
+11. Crème Caramel - 95rs
+12. Chocolate Mousse - 85rs
+13. Apple Crumble/Pie - 170/210rs
+14. Rum Ball - 65rs
+15. Dark Chocolate Biscuit - 40rs
+16. Chocolate Brownie - 85rs
+17. Bread Pudding - 95rs
+18. Choco Lava Cake - 80rs
+
+--- ROLLS ---
+19. Chicken Mayo Roll - 140rs
+20. Chicken Tikka Roll - 160rs
+21. Chicken Seekh Roll - 130rs
+22. Smoked Chicken Roll - 150rs
+23. Bhuna Gosh Roll - 180rs
+
+--- BURGERS ---
+24. Veg Slider - 50rs
+25. Chicken Slider - 50rs
+26. Mutton Mince Slider - 60rs
+27. Veg/Paneer Tikka - 140/160rs
+    (Extra Egg/Cheese)
+
+--- WRAPS ---
+28. Chicken Tikka Wrap - 170rs
+29. Grilled Chicken Wrap - 170rs
+
+--- PATTIES ---
+30. Veg Puff - 60rs
+31. Chicken Puff - 60rs
+32. Mutton Puff - 60rs
+
+--- QUICHE ---
+33. Chicken & Cheese Quiche - 135rs
+34. Chicken Sausage Quiche - 140rs
+
+--- HOT & COLD BEVERAGES ---
+35. Green/Lemon/Mint Tea
+36. Masala Tea
+37. Ginger Lemon Tea w Honey
+38. Espresso
+39. Americano/Cappuccino/Latte
+40. Hot Chocolate
+41. Coke/Thums Up
+42. Water
+43. Fresh Lime Water/Soda
+44. Lemon & Mint Iced Tea
+45. Cold Coffee w Hazelnut
+46. Iced Americano/Cappuccino/Latte
+47. Chocolate/Oreo/Kitkat Milkshake
+48. Strawberry/Banana Milkshake
+49. Raw Pressery Juices (Cold pressed juice)
+
+--- SALADS ---
+50. Chicken (Caesar's/Grilled/Tikka) - 200rs
+
+---------------------------------
