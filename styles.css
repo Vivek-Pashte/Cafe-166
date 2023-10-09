@@ -136,3 +136,19 @@
   display: block;
   margin: 0 auto; 
 }
+
+.about-us {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.about-us-text {
+  flex: 1;
+  padding: 20px;
+}
+
+.about-us-image img {
+  max-width: 100%;
+  height: auto;
+}
