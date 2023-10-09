@@ -162,3 +162,25 @@
 .form-control {
   margin-bottom: 15px;
 }
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+}
+
+.gallery-item {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+
+.gallery-item img {
+  max-width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.gallery-item:hover img {
+  transform: scale(1.1);
+}
