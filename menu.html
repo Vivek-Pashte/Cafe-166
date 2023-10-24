@@ -4,55 +4,87 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menu - Cafe 166</title>
-    <!-- Include Bootstrap CSS and any other CSS stylesheets -->
+    <link rel="stylesheet" href="styles.css" />
+    <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"/>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"/>
     <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <!-- Navigation Bar -->
-<nav class="navbar navbar-expand-lg ">
-    <div class="container">
-        <a class="navbar-brand mb-0 h1" href="index.html">
-            <img src="image/Free_Sample_By_Wix.jpg" alt="Cafe 166 logo" />
-        </a>
-        <button
-            class="navbar-toggler"
-            type="button"
-            data-bs-toggle="collapse"
-            data-bs-target="#navbarNav"
-            aria-controls="navbarNav"
-            aria-expanded="false"
-            aria-label="Toggle navigation"
-        >
-            <span class="navbar-toggler-icon"></span>
-        </button>
-        <!-- Navigation Links -->
-        <div class="collapse navbar-collapse" id="navbarNav">
-            <ul class="navbar-nav ms-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link active" href="menu.html">Menu</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="about.html">About Us</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="contact.html">Contact</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="gallery.html">Gallery</a>
-                </li>
-            </ul>
+    <nav class="navbar navbar-expand-lg ">
+        <div class="container">
+            <a class="navbar-brand mb-0 h1" href="index.html">
+                <img src="image/Free_Sample_By_Wix.jpg" alt="Cafe 166 logo" />
+            </a>
+            <button
+                class="navbar-toggler"
+                type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#navbarNav"
+                aria-controls="navbarNav"
+                aria-expanded="false"
+                aria-label="Toggle navigation"
+            >
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navigation Links -->
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="menu.html">Menu</a>
+                    </li>               
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">Contact</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="gallery.html">Gallery</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="cart.html">
+                            <i class="fas fa-shopping-cart"></i> Cart
+                        </a>
+                    </li> 
+                </ul>
+            </div>
         </div>
+    </nav>   
+
+<div class="container">
+    <header>
+        <h1>Menu</h1>
+        <div class="shopping">
+            <img src="image/shopping.svg">
+            <span class="quantity">0</span>
+        </div>
+    </header>
+
+    <div class="list">
+      
     </div>
-</nav>
+</div>
+<div class="cart">
+    <h1>Card</h1>
+    <ul class="listCard">
+    </ul>
+    <div class="checkOut">
+        <div class="total">0</div>
+        <div class="closeShopping">Close</div>
+    </div>
+</div>
+
+
+
+
 
 <!-- Section 2: Sandwiches -->
-<section id="sandwiches" class="menu-section text-center py-5">
+<!-- <section id="sandwiches" class="menu-section text-center py-5">
     <div class="container">
         <h2 class="display-4 mb-4">Sandwiches</h2>
         <div class="row">
@@ -62,6 +94,7 @@
                     <div class="card-body">
                         <h4 class="card-title">Cheese, Chutney & Cucumber</h4>
                         <p class="card-text">$80</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Cheese, Chutney & Cucumber" data-price="80">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -71,6 +104,7 @@
                     <div class="card-body">
                         <h4 class="card-title">Chicken Grilled</h4>
                         <p class="card-text">$140</p>
+                        <button class="btn btn-primary add-to-cart" data-name="Chicken Grilled" data-price="140">Add to Cart</button>
                     </div>
                 </div>
             </div>
@@ -116,12 +150,12 @@
     </div>
 </section>
 
-<!-- Section 3: Desserts -->
-<section id="desserts" class="menu-section text-center py-5">
+ Section 3: Desserts -->
+<!-- <section id="desserts" class="menu-section text-center py-5">
     <div class="container">
         <h2 class="display-4 mb-4">Desserts</h2>
         <div class="row">
-            <!-- Dessert Item 1 -->
+             Dessert Item 1 
             <div class="col-md-4">
                 <div class="card mb-4">
                     <img src="dessert-image1.jpg" class="card-img-top" alt="Chocolate Éclairs">
@@ -131,8 +165,8 @@
                     </div>
                 </div>
             </div>
-            <!-- Repeat this block for each dessert item -->
-            <!-- Example for Dessert Item 2 -->
+             Repeat this block for each dessert item -->
+             <!--Example for Dessert Item 2 
             <div class="col-md-4">
                 <div class="card mb-4">
                     <img src="dessert-image2.jpg" class="card-img-top" alt="Red Velvet/Chocolate Cup Cake">
@@ -144,9 +178,9 @@
             </div>
         </div>
     </div>
-</section>
+</section>-->
 
-<!-- Continue with other menu categories following a similar structure -->
+<!-- Continue with other menu categories following a similar structure  -->
 
     <!-- Footer -->
 <footer class="bg-dark text-white py-5">
@@ -191,8 +225,8 @@
 </footer>
 
     <!-- Include Bootstrap and any other JavaScript libraries -->
-    <script src="bootstrap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>        
     <!-- Include your custom JavaScript if needed -->
-    <script src="custom.js"></script>
+    <script src="cart.js"></script>
 </body>
 </html>
