@@ -1,86 +1,3 @@
-// // Function to add items to the cart
-// function addToCart(name, price) {
-//     // Retrieve the cart data from localStorage
-//     const cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-//     // Add the new item to the cart
-//     cart.push({ name, price });
-
-//     // Store the updated cart data in localStorage
-//     localStorage.setItem('cart', JSON.stringify(cart));
-// }
-
-// // Function to display items in the cart
-// function displayCart() {
-//     // Retrieve the cart data from localStorage
-//     const cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-//     // Get the cart items container element
-//     const cartItemsContainer = document.getElementById('cart-items');
-
-//     // Get the cart total element
-//     const cartTotal = document.getElementById('cart-total');
-
-//     // Clear any previous content in the cart items container
-//     cartItemsContainer.innerHTML = '';
-
-//     let total = 0;
-
-//     // Loop through the items in the cart and display them
-//     cart.forEach((item, index) => {
-//         const cartItem = document.createElement('div');
-//         cartItem.classList.add('row', 'cart-item');
-//         cartItem.innerHTML = `
-//             <div class="col-md-6">
-//                 <h4 class="cart-item-title">${item.name}</h4>
-//                 <p class="cart-item-price">$${item.price}</p>
-//             </div>
-//             <div class="col-md-3">
-//                 <input
-//                     type="number"
-//                     id="item-quantity-${index}"
-//                     value="1"
-//                     min="1"
-//                     class="form-control"
-//                     onchange="calculateTotal()"
-//                 />
-//             </div>
-//             <div class="col-md-3">
-//                 <button class="btn btn-danger" onclick="removeItem(${index})">
-//                     Remove
-//                 </button>
-//             </div>
-//         `;
-//         cartItemsContainer.appendChild(cartItem);
-//         total += item.price;
-//     });
-
-//     // Display the cart total
-//     cartTotal.textContent = `Total: $${total.toFixed(2)}`;
-// }
-
-// // Function to remove an item from the cart
-// function removeItem(index) {
-//     // Retrieve the cart data from localStorage
-//     const cart = JSON.parse(localStorage.getItem('cart')) || [];
-
-//     // Remove the item at the specified index
-//     if (index >= 0 && index < cart.length) {
-//         cart.splice(index, 1);
-
-//         // Store the updated cart data in localStorage
-//         localStorage.setItem('cart', JSON.stringify(cart));
-
-//         // Refresh the cart display
-//         displayCart();
-//     }
-// }
-
-// // Call the displayCart function when the cart page loads
-// displayCart();
-
-
-
 let openShopping = document.querySelector('.shopping');
 let closeShopping = document.querySelector('.closeShopping');
 let list = document.querySelector('.list');
@@ -100,7 +17,7 @@ let products = [
     {
         id: 1,
         name: 'Cheese, Chutney & Cucumber',
-        image: 'sandwiche.jpg',
+        image: 'Sandwiche.jpg',
         price: 80
     },
     {
@@ -148,18 +65,41 @@ let products = [
   
 ];
 let listCards  = [];
-function initApp(){
-    products.forEach((value, key) =>{
+function initApp() {
+    let count = 0; // Initialize a counter to keep track of the number of products displayed
+
+    products.forEach((value, key) => {
+        if (count === 0) {
+            // Start a new row for the first product and every third product afterward
+            let row = document.createElement('div');
+            row.classList.add('row');
+            list.appendChild(row);
+        }
+
         let newDiv = document.createElement('div');
+        newDiv.classList.add('col-md-4');
         newDiv.classList.add('item');
         newDiv.innerHTML = `
-            <img src="menu/${value.image}">
-            <div class="title">${value.name}</div>
-            <div class="price">$${value.price.toLocaleString()}</div>
-            <button onclick="addToCard(${key})">Add To Card</button>`;
-        list.appendChild(newDiv);
-    })
+            <div class="card mb-4">
+                <img src="menu/${value.image}" class="card-img-top fixed-image" />
+                <div class="card-body">
+                    <h4 class="card-title">${value.name}</h4>
+                    <p class="card-text">$${value.price.toLocaleString()}</p>
+                    <button onclick="addToCart(${key})" class="button-5">Add To Cart</button>
+                </div>
+            </div>
+        `;
+
+        // Append the product card to the current row
+        list.lastChild.appendChild(newDiv);
+
+        count++;
+        if (count === 3) {
+            count = 0; // Reset the counter after displaying three products in a row
+        }
+    });
 }
+
 initApp();
 function addToCard(key){
     if(listCards[key] == null){
